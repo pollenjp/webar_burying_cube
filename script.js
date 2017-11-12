@@ -55,67 +55,8 @@ function onResize(){
     } 
 }
 
-
-////////////////////////////////////////////////////////////////////////////
-//////////hiro-marker
-var hiro_marker = new THREE.Group();                       
-var controls = new THREEx.ArMarkerControls(context, hiro_marker, {
-    type: "pattern",                                     
-    patternUrl: "./patt/hiro.patt",                             
-});
-scene.add(hiro_marker);
-
-var loader = new THREE.GLTFLoader();
-loader.load("./gltf/face/face.gltf", function( gltf ){
-    hiro_marker.add( gltf.scene );
-    gltf.animations;
-    gltf.scene;
-    gltf.scenes;
-    gltf.cameras;
-});
-////////////////////////////////////////////////////////////////////////////
-
-
 //////////////////////////////////////////////////////////////////////////////
-////////////kanji_marker
-var kanji_marker = new THREE.Group();                       
-var controls = new THREEx.ArMarkerControls(context, kanji_marker, {
-    type: "pattern",                                     
-    patternUrl: "./patt/kanji.patt",                             
-});
-scene.add(kanji_marker);
-
-var loader = new THREE.GLTFLoader();
-loader.load("./gltf/monkey/monkey.gltf", function( gltf ){
-    kanji_marker.add( gltf.scene );
-    gltf.animations;
-    gltf.scene;
-    gltf.scenes;
-    gltf.cameras;
-});
-//////////////////////////////////////////////////////////////////////////////
-
-//////////////////////////////////////////////////////////////////////////////
-////////////utv-marker
-var utv_marker = new THREE.Group();                       
-var controls = new THREEx.ArMarkerControls(context, utv_marker, {
-    type: "pattern",                                     
-    patternUrl: "./patt/ut-virtual.patt",                             
-});
-scene.add(utv_marker);
-
-var loader = new THREE.GLTFLoader();
-loader.load("./gltf/geometory03/geometory03.gltf", function( gltf ){
-    utv_marker.add( gltf.scene );
-    gltf.animations;
-    gltf.scene;
-    gltf.scenes;
-    gltf.cameras;
-});
-//////////////////////////////////////////////////////////////////////////////
-
-//////////////////////////////////////////////////////////////////////////////
-////////////utv-marker
+////////////utv_tamagohibiware
 var utv_tamago_ware = new THREE.Group();                       
 var controls = new THREEx.ArMarkerControls(context, utv_tamago_ware, {
     type: "pattern",                                     
@@ -124,7 +65,7 @@ var controls = new THREEx.ArMarkerControls(context, utv_tamago_ware, {
 scene.add(utv_tamago_ware);
 
 var loader = new THREE.GLTFLoader();
-loader.load("./gltf/sample_object01/sample_object01.gltf", function( gltf ){
+loader.load("./gltf/burying_cube/burying_cube.gltf", function( gltf ){
     utv_tamago_ware.add( gltf.scene );
     gltf.animations;
     gltf.scene;
